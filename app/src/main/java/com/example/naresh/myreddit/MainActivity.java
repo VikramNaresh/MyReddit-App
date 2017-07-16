@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         title = data2.getString("title");
                         thumbnail = data2.getString("thumbnail");
                         comments = data2.getInt("num_comments");
-                        if(!thumbnail.equals("default")){
+                        if(thumbnail.length()>=13){
                             sendtolistview();
                         }
                         else
